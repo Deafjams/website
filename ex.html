@@ -11,6 +11,77 @@
 <style >
  
 
+
+.contact
+{
+
+    font: 36 4em/1 "Oswald", sans-serif;
+    letter-spacing: 0;
+    padding: .25em 0 .325em;
+    display: block;
+    margin: 0 auto;
+    text-shadow: 0 0 80px rgba(255,255,255,.5);
+    font-weight: 900;
+
+/* Clip Background Image */
+
+    background: url(http://f.cl.ly/items/010q3E1u3p2Q0j1L1S1o/animated_text_fill.png) repeat-y;
+    -webkit-background-clip: text;
+
+/* Animate Background Image */
+
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: aitf 80s linear infinite;
+
+/* Activate hardware acceleration for smoother animations */
+
+    -webkit-transform: translate3d(0,0,0);
+    -webkit-backface-visibility: hidden;
+
+
+}
+
+.typearea
+{
+
+    font: 36 4em/1 "Oswald", sans-serif;
+    font-weight: 900;
+    letter-spacing: 0;
+    padding: .25em 0 .325em;
+    display: block;
+    margin: 0 auto;
+    text-shadow: 0 0 80px rgba(255,255,255,.5);
+
+/* Clip Background Image */
+
+    background: url(http://f.cl.ly/items/010q3E1u3p2Q0j1L1S1o/animated_text_fill.png) repeat-y;
+    -webkit-background-clip: text;
+
+/* Animate Background Image */
+
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: aitf 80s linear infinite;
+
+/* Activate hardware acceleration for smoother animations */
+
+    -webkit-transform: translate3d(0,0,0);
+    -webkit-backface-visibility: hidden;
+
+
+}
+
+/* Animate Background Image */
+
+@-webkit-keyframes aitf {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+
+
+
+
+
 *{
 
   text-shadow:0 0 0;
@@ -44,6 +115,7 @@
   display: inline-block;
   margin-left: auto;
   margin-right: auto;
+ 
 
 
 
@@ -82,7 +154,7 @@
 .giftwo {
   
     width: 500px;
-    height: 240px;
+    height: 488px;
     background: url("images/math2.gif");
     margin-left: auto;
     margin-right: auto;
@@ -108,6 +180,8 @@
 .typearea{
 
 
+}
+.contact{
 
 }
 
@@ -183,8 +257,8 @@ position: absolute;
 <script>
   $(function(){
       $(".typearea").typed({
-        strings: ["Ryan Vogt","Nerd","Mathematician","Computer Scientist",],
-        typeSpeed: 0,
+        strings: ["Ryan Vogt","Nerd","Mathematician","Computer Scientist"],
+        typeSpeed: 200,
         loop: true,
         cursorChar: "|",
       });
