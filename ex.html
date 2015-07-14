@@ -42,12 +42,17 @@
 
   height: 90px;
   display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+
+
 
 }
 
 .typing_container * {
 
   float: left;
+
 
 }
 
@@ -63,7 +68,28 @@
     height: 240px;
     background: url("images/math.gif");
     
+    
 }
+
+.gifone {
+ 
+    
+    width: 400px;
+    height: 286px;
+    background: url("images/math1.gif");
+    
+}
+.giftwo {
+  
+    width: 500px;
+    height: 240px;
+    background: url("images/math2.gif");
+    margin-left: auto;
+    margin-right: auto;
+    
+    
+}
+
 
 #slide4 {
 
@@ -76,6 +102,12 @@
 
   position: relative;
   z-index: 1;
+
+}
+
+.typearea{
+
+
 
 }
 
@@ -135,6 +167,12 @@ position: absolute;
   position: relative;
   z-index: 1;
 
+
+}
+.padding
+{
+
+ padding: 25px 50px;
 
 }
 </style>
@@ -217,10 +255,11 @@ position: absolute;
 
 
   <div class="dropdown">
-    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Important Publications
+    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">My Publications
     <span class="caret"></span></button>
     <ul class="dropdown-menu">
-      <li><a href="#">Numerical Linear Algebra Notes</a></li>
+      <li><a href="papers/paper1">Nonautonomous Discrete Neuron Model with Multiple
+Periodic and Eventually Periodic Solutions</a></li>
       <li><a href="#">Partial Differential Equations Notes</a></li>
       <li><a href="#">Finite Difference Notes</a></li>
       <li><a href="#">Spectral Methods Notes</a></li>
@@ -251,6 +290,8 @@ position: absolute;
   </div>
  
 
+ <div class = "padding"></div>
+
   <h1>
     <div class='typing_container'>
       <div class = "typearea"></div>
@@ -266,16 +307,26 @@ position: absolute;
   <div id="soc" class="soc" data-size="50px" data-radius="circle">
     <a href="https://twitter.com/mathematicianv" class="soc-twitter" target="_blank" title="Twitter"></a>
     <a href="https://github.com/mathematicianvogt" class="soc-github" target="_blank" title="Github"></a>
+        <a href="https://www.linkedin.com/pub/ryan-vogt/b1/75a/567" class="soc-linkedin" target="_blank" title="LinkeIn"></a>
     <a href="https://www.youtube.com/user/NewtonianMathematics" class="soc-youtube" target="_blank" title="YouTube"></a>
+    <a href="https://www.reddit.com/user/Vogtster/" class="soc-reddit" target="_blank" title="Reddit"></a>
 </div>
 
 
 
   
+  
+
+
   <div class = "gif">
 
   </div>
  
+
+ 
+
+
+
 
 
 
@@ -300,7 +351,7 @@ position: absolute;
 <div id="slide1" class="slide">
   <div class="title">
     <h1>Bio</h1>
-    <p>Hi my name is Ryan! I am a PhD student at NCSU. I have an interest in biking, and running. I have degrees in Mathematics, Computer Science, and Engineering. My research interests are numerical analysis and partial differential equations. I am interested in both applied and theoretical mathematics. My favorite numerical methods are finite difference, spectral methods, finite element, and finite volume </p>
+    <p>Hi my name is Ryan! I am a PhD student at NCSU. I have an interest in biking, and running. I have degrees in Mathematics, Computer Science, and Engineering. My research interests are numerical analysis and partial differential equations. I am interested in both applied and theoretical mathematics. My favorite numerical methods are finite difference, spectral methods, finite element, and finite volume. I always like meeting new people; especially those who like math. If I am your TA, please feel free to always contact me. I am here to help.  </p>
 
 
   </div>
@@ -309,22 +360,68 @@ position: absolute;
 <div id="slide2" class="slide">
   <div class="title">
     <h1>My interests</h1>
-    <p> Math is pretty neat. I write code to solve math problem; that is, solve partial differential equations numerically. There are many complicated problem in which analytic solutions cannot be found, approximate solutions to these problems can be established with numerical methods. </p>
+    <p> Math is pretty neat. I write code to solve math problem; that is, solve partial differential equations numerically. There are many complicated problem in which analytic solutions cannot be found, approximate solutions to these problems can be established with numerical methods. So the big question is why do we care? Well, for many problems, approximations are good enough. We in the numerical analysis community always value getting to the best answer in the quickest amount of time. We are alright with the "good" enough answer though.
+  </p>
+
+  <p>
+    I'm also very interested in computer science. I like writing bots. See my twitter account, it is fully automated. I mean, I actually update my twitter close to 500 times a day. I have no life (Sarcasm). I think the concept of getting things done in parallel is a very neat idea. So, I like running a lot of scripts while I do math. Life is all about optimizing time.</p>
+
+
+    <div class = "giftwo"> </div>
+
   </div>
   <img class='postcard' src="movies/heat3d.gif">
   <img class='postcard' src="movies/heat2d.gif"> 
 </div>
 
 <div id="slide3" class="slide">
+  
+
   <div class="title">
-    <h1>Contact Info</h1>
+    <h1>FAQ</h1>
+    
+     <h1>Ryan, I'm shy and its difficult for me to approach you because I don't want to look like an idiot</h1>
+    <p>I understand it is daunting, this is a new course for you and you want to make a good impression. A good step is to ask questions and come to my office hours regularly if you are confused by problem sets or content presented in the course. If you want to discuss other things, please feel free to stop by, I am always willing to talk. Please do not feel like you are alone on this adventure. Please do not feel embarrassed or bad that you are seeking help. Asking for help is a sign of strength, not weakness. I'm here to help. I have allocated time for office hours. I want people to come and talk to me about math. If people don't come to my office hours, then I will be forced to watch cat videos for that time. Please help me avoid this troublesome situation.</p>
+
+    
     <p>
-        <ul>
-      <li>Email: rvogt2@ncsu.edu</li>
-      <li>Office Number:</li>
-      <li>Office Hours:</li>
-    </ul>
+    <h1>So Ryan, why did you willingly choose to be a nerd for your entire life? Don't you want to have friends or a social life?</h1>
+    Well adventuer, that is an oddly specific question; life as a nerd if pretty awesome.
+
     </p>
+
+
+    <h1>How did you get good at math?</h1>
+    <p>I'm a big believer that interest in a subject can make a person an expert in the field in time; regardless of level when they began. When I was a younger fellow I was not the best at math. When I got into programming through, I became interested in math. This led to the nerd I am today.</p>
+     <h1>Why Math?</h1>
+    <p>Well, I can't draw to save my life. I can make an arguement that I can make a mean stick figure though.</p>
+    <h1>Why are you in graduate school?</h1>
+    <p>I want to become an expert in my field one day. In other words, I want to add original content to my field, I want to help progress knowledge. I also just like the idea of learning from other people. When you go to college to learn that there are a lot smarter people out there than you. Its pretty humbling. We are all life time learners.</p>
+
+    <h1>What do you expect to do after graduate school?</h1>
+    <p>Math, programming, maybe if I'm lucky finally be able to have a social life.</p>
+
+    <h1>Lifetime Goals?</h1>
+    <p>Well, 100 followers on twitter would be the first obvious life goal.</p>
+    
+     <h1>So lets be honest, Mac or PC?</h1>
+    <p>Mac obviously. I am a computer scientist after all.</p>
+
+
+     <h1>What did your computer science degree get you?</h1>
+    <p>This website and a lot of bitterness towards C.</p>
+
+
+
+     <h1>Hi Ryan, I'm a total nerd. How do I become awesome</h1>
+    <p>You already are awesome, next question.</p>
+
+
+    <h1>Are any of these FAQ real, or are you just pulling our legs</h1>
+    <p>Well adventuer, other than the first question, all the rest are in good fun. </p>
+ 
+ 
+
   </div>
 </div>
 
