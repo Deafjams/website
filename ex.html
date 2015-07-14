@@ -1,0 +1,341 @@
+<html>
+<link rel="stylesheet" type="text/css" href="skroll.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="soc.js-master/soc.min.css" media="screen" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+<head>
+
+<style >
+ 
+
+*{
+
+  text-shadow:0 0 0;
+}
+
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    10% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    10% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    10% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+.typing_container {
+
+  height: 90px;
+  display: inline-block;
+
+}
+
+.typing_container * {
+
+  float: left;
+
+}
+
+ img {
+    width: 192px;
+    height: auto;
+    border-radius: 50%;
+    position: relative;
+}
+
+.gif {
+    width: 560px;
+    height: 240px;
+    background: url("images/math.gif");
+    
+}
+
+#slide4 {
+
+  position: relative;
+  z-index: 0;
+
+}
+
+#slide4 * {
+
+  position: relative;
+  z-index: 1;
+
+}
+
+#title
+{
+
+  position: relative;
+  z-index: 0;
+
+
+
+}
+
+
+.gif{
+
+  margin-left: auto;
+  margin-right: auto;
+
+
+}
+
+.mus .vid
+{
+ margin-left: auto;
+  margin-right: auto;
+
+
+}
+
+.dropdown{
+
+   float:left;
+
+
+
+}
+.pic
+{
+  width: 192px;
+  height: 192px;
+  margin-left: auto;
+  margin-right: auto;
+
+
+
+}
+.dropdown .open{
+
+position: absolute;
+
+
+
+}
+.soc
+{
+  position: relative;
+  z-index: 1;
+
+
+}
+</style>
+
+
+<script type="text/javascript" src="jquery-2.1.4.js"></script>
+<script type="text/javascript" src="typed.js"></script>
+<script>
+  $(function(){
+      $(".typearea").typed({
+        strings: ["Ryan Vogt","Nerd","Mathematician","Computer Scientist",],
+        typeSpeed: 0,
+        loop: true,
+        cursorChar: "|",
+      });
+  });
+</script>
+
+<script>
+  $(function(){
+      $(".contact").typed({
+        strings: ["Email: rvogt2@ncsu.edu | Office: TBA | Office Hours: TBA"],
+        typeSpeed: 0,
+        loop: false,
+        cursorChar: "|",
+      });
+  });
+</script>
+<script type="text/javascript" src="soc.js-master/soc.min.js"></script>
+</head>
+
+
+<div id="title" class="slide header">
+  
+
+
+
+
+<div class="container">                                        
+  <div class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Notes And HW
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a href="#">Numerical Linear Algebra Notes</a></li>
+      <li><a href="#">Partial Differential Equations Notes</a></li>
+      <li><a href="#">Finite Difference Notes</a></li>
+      <li><a href="#">Spectral Methods Notes</a></li>
+      <li><a href="#">Finite Element Notes</a></li>
+       <li><a href="#">Numerical Analysis Notes</a></li>
+       <li><a href="#">Partial Differential Equation and Perturbation Methods Homework.</a></li>
+
+
+
+
+
+    </ul>
+
+  </div>
+
+
+   <div class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Important Math Books
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a href="#">Numerical Linear Algebra Notes</a></li>
+      <li><a href="#">Partial Differential Equations Notes</a></li>
+      <li><a href="#">Finite Difference Notes</a></li>
+      <li><a href="#">Spectral Methods Notes</a></li>
+      <li><a href="#">Finite Element Notes</a></li>
+       <li><a href="#">Numerical Analysis Notes</a></li>
+       <li><a href="#">Partial Differential Equation and Perturbation Methods Homework.</a></li>
+
+
+
+
+
+    </ul>
+
+  </div>
+
+
+  <div class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Important Publications
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a href="#">Numerical Linear Algebra Notes</a></li>
+      <li><a href="#">Partial Differential Equations Notes</a></li>
+      <li><a href="#">Finite Difference Notes</a></li>
+      <li><a href="#">Spectral Methods Notes</a></li>
+      <li><a href="#">Finite Element Notes</a></li>
+       <li><a href="#">Numerical Analysis Notes</a></li>
+       <li><a href="#">Partial Differential Equation and Perturbation Methods Homework.</a></li>
+
+
+
+
+
+    </ul>
+
+  </div>
+
+
+
+
+
+
+
+
+
+<div class="pic"> 
+
+  <img src='images/me.jpg'>
+
+  </div>
+ 
+
+  <h1>
+    <div class='typing_container'>
+      <div class = "typearea"></div>
+    </div>
+  </h1>
+  <h1>
+    <div class='typing_container'>
+      <div class = "contact"></div>
+    </div>
+  </h1>
+
+
+  <div id="soc" class="soc" data-size="50px" data-radius="circle">
+    <a href="https://twitter.com/mathematicianv" class="soc-twitter" target="_blank" title="Twitter"></a>
+    <a href="https://github.com/mathematicianvogt" class="soc-github" target="_blank" title="Github"></a>
+    <a href="https://www.youtube.com/user/NewtonianMathematics" class="soc-youtube" target="_blank" title="YouTube"></a>
+</div>
+
+
+
+  
+  <div class = "gif">
+
+  </div>
+ 
+
+
+
+
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+  
+
+<div id="slide1" class="slide">
+  <div class="title">
+    <h1>Bio</h1>
+    <p>Hi my name is Ryan! I am a PhD student at NCSU. I have an interest in biking, and running. I have degrees in Mathematics, Computer Science, and Engineering. My research interests are numerical analysis and partial differential equations. I am interested in both applied and theoretical mathematics. My favorite numerical methods are finite difference, spectral methods, finite element, and finite volume </p>
+
+
+  </div>
+</div>
+
+<div id="slide2" class="slide">
+  <div class="title">
+    <h1>My interests</h1>
+    <p> Math is pretty neat. I write code to solve math problem; that is, solve partial differential equations numerically. There are many complicated problem in which analytic solutions cannot be found, approximate solutions to these problems can be established with numerical methods. </p>
+  </div>
+  <img class='postcard' src="movies/heat3d.gif">
+  <img class='postcard' src="movies/heat2d.gif"> 
+</div>
+
+<div id="slide3" class="slide">
+  <div class="title">
+    <h1>Contact Info</h1>
+    <p>
+        <ul>
+      <li>Email: rvogt2@ncsu.edu</li>
+      <li>Office Number:</li>
+      <li>Office Hours:</li>
+    </ul>
+    </p>
+  </div>
+</div>
+
+<div id="slide4" class="slide header">
+    <h1>Some Tunes for Mathematicians</h1>
+
+    <iframe class="mus" src="https://embed.spotify.com/?uri=spotify:user:mathboss:playlist:3To0NLisooRDQRrlaZscKh" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
+
+   
+</div>
+
+
+
+</html>
