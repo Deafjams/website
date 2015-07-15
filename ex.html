@@ -1,288 +1,223 @@
+<!DOCTYPE html>
 <html>
-<link rel="stylesheet" type="text/css" href="skroll.css" media="screen" />
-<link rel="stylesheet" type="text/css" href="soc.js-master/soc.min.css" media="screen" />
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-
 <head>
+  <title>Ryan</title>
+  <link rel="stylesheet" type="text/css" href="skroll.css" media="screen">
+  <link rel="stylesheet" type="text/css" href="soc.js-master/soc.min.css" media="screen" >
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script type="text/javascript" src="jquery-2.1.4.js"></script>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script type='text/javascript' src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+  <style>
+
+    /* Animate Background Image */
+
+    @-webkit-keyframes aitf {
+      0% { background-position: 0% 50%; }
+      100% { background-position: 100% 50%; }
+    }
+
+    *{
+
+      text-shadow:0 0 0;
+    }
+
+    .typed-cursor{
+        opacity: 1;
+        -webkit-animation: blink 0.7s infinite;
+        -moz-animation: blink 0.7s infinite;
+        animation: blink 0.7s infinite;
+    }
+    @keyframes blink{
+        10% { opacity:1; }
+        50% { opacity:0; }
+        100% { opacity:1; }
+    }
+    @-webkit-keyframes blink{
+        10% { opacity:1; }
+        50% { opacity:0; }
+        100% { opacity:1; }
+    }
+    @-moz-keyframes blink{
+        10% { opacity:1; }
+        50% { opacity:0; }
+        100% { opacity:1; }
+    }
 
-<style >
- 
+    .container {
 
+      width: 100%;
 
-.contact
-{
+    }
 
-    font: 36 4em/1 "Oswald", sans-serif;
-    letter-spacing: 0;
-    padding: .25em 0 .325em;
-    display: block;
-    margin: 0 auto;
-    text-shadow: 0 0 80px rgba(255,255,255,.5);
-    font-weight: 900;
+    .typing_container {
 
-/* Clip Background Image */
+      height: 90px;
+      text-align: center;
 
-    background: url(http://f.cl.ly/items/010q3E1u3p2Q0j1L1S1o/animated_text_fill.png) repeat-y;
-    -webkit-background-clip: text;
+    }
 
-/* Animate Background Image */
+    .typing_area {
 
-    -webkit-text-fill-color: transparent;
-    -webkit-animation: aitf 80s linear infinite;
+      display: inline-block;
+      height: 90px;
+      font-size: 50px;
 
-/* Activate hardware acceleration for smoother animations */
+    }
 
-    -webkit-transform: translate3d(0,0,0);
-    -webkit-backface-visibility: hidden;
+    .typing_area * {
 
+      float: left;
 
-}
 
-.typearea
-{
+    }
 
-    font: 36 4em/1 "Oswald", sans-serif;
-    font-weight: 900;
-    letter-spacing: 0;
-    padding: .25em 0 .325em;
-    display: block;
-    margin: 0 auto;
-    text-shadow: 0 0 80px rgba(255,255,255,.5);
+     .round {
+        width: 192px;
+        height: auto;
+        border-radius: 50%;
+        position: relative;
+    }
 
-/* Clip Background Image */
+    .gif {
+        width: 560px;
+        height: 240px;
+        background: url("images/math.gif");
+        
+        
+    }
 
-    background: url(http://f.cl.ly/items/010q3E1u3p2Q0j1L1S1o/animated_text_fill.png) repeat-y;
-    -webkit-background-clip: text;
+    .gifone {
+     
+        
+        width: 400px;
+        height: 286px;
+        background: url("images/math1.gif");
+        
+    }
+    .giftwo {
+      
+        width: 100%;
+        height: 488px;
+        margin-left: auto;
+        margin-right: auto;
+        
+        
+    }
 
-/* Animate Background Image */
+    .gifimgtwo {
 
-    -webkit-text-fill-color: transparent;
-    -webkit-animation: aitf 80s linear infinite;
+      width: 100%;
+      height: auto;
 
-/* Activate hardware acceleration for smoother animations */
+    }
 
-    -webkit-transform: translate3d(0,0,0);
-    -webkit-backface-visibility: hidden;
 
+    #slide4 {
 
-}
+      position: relative;
+      z-index: 0;
 
-/* Animate Background Image */
+    }
 
-@-webkit-keyframes aitf {
-  0% { background-position: 0% 50%; }
-  100% { background-position: 100% 50%; }
-}
+    #slide4 * {
 
+      position: relative;
+      z-index: 1;
 
+    }
 
+    #title
+    {
 
+      padding: 5px 0 50px;
+      position: relative;
+      z-index: 0;
 
+    }
 
-*{
 
-  text-shadow:0 0 0;
-}
+    .gif{
 
-.typed-cursor{
-    opacity: 1;
-    -webkit-animation: blink 0.7s infinite;
-    -moz-animation: blink 0.7s infinite;
-    animation: blink 0.7s infinite;
-}
-@keyframes blink{
-    10% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-}
-@-webkit-keyframes blink{
-    10% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-}
-@-moz-keyframes blink{
-    10% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-}
+      margin-left: auto;
+      margin-right: auto;
 
-.typing_container {
 
-  height: 90px;
-  display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
- 
+    }
 
+    .mus
+    {
 
+      margin-left: auto;
+      margin-right: auto;
+      border: 0;
 
-}
+    }
 
-.typing_container * {
+    .dropdown {
 
-  float: left;
+       float:left;
 
 
-}
 
- img {
-    width: 192px;
-    height: auto;
-    border-radius: 50%;
-    position: relative;
-}
+    }
+    .pic
+    {
+      width: 192px;
+      height: 192px;
+      margin-left: auto;
+      margin-right: auto;
+    }
 
-.gif {
-    width: 560px;
-    height: 240px;
-    background: url("images/math.gif");
-    
-    
-}
+    .dropdown .open {
 
-.gifone {
- 
-    
-    width: 400px;
-    height: 286px;
-    background: url("images/math1.gif");
-    
-}
-.giftwo {
-  
-    width: 500px;
-    height: 488px;
-    background: url("images/math2.gif");
-    margin-left: auto;
-    margin-right: auto;
-    
-    
-}
+    position: absolute;
 
 
-#slide4 {
 
-  position: relative;
-  z-index: 0;
+    }
+    .soc
+    {
+      position: relative;
+      z-index: 1;
 
-}
 
-#slide4 * {
+    }
+    .padding
+    {
 
-  position: relative;
-  z-index: 1;
+     padding: 25px 50px;
 
-}
+    }
+  </style>
 
-.typearea{
+  <script type="text/javascript" src="typed.js"></script>
+  <script>
+    $(function(){
+        $(".typearea").typed({
+          strings: ["Ryan Vogt","Nerd","Mathematician","Computer Scientist"],
+          typeSpeed: 200,
+          loop: true,
+          cursorChar: "|",
+        });
+    });
 
-
-}
-.contact{
-
-}
-
-#title
-{
-
-  position: relative;
-  z-index: 0;
-
-
-
-}
-
-
-.gif{
-
-  margin-left: auto;
-  margin-right: auto;
-
-
-}
-
-.mus .vid
-{
- margin-left: auto;
-  margin-right: auto;
-
-
-}
-
-.dropdown{
-
-   float:left;
-
-
-
-}
-.pic
-{
-  width: 192px;
-  height: 192px;
-  margin-left: auto;
-  margin-right: auto;
-
-
-
-}
-.dropdown .open{
-
-position: absolute;
-
-
-
-}
-.soc
-{
-  position: relative;
-  z-index: 1;
-
-
-}
-.padding
-{
-
- padding: 25px 50px;
-
-}
-</style>
-
-
-<script type="text/javascript" src="jquery-2.1.4.js"></script>
-<script type="text/javascript" src="typed.js"></script>
-<script>
-  $(function(){
-      $(".typearea").typed({
-        strings: ["Ryan Vogt","Nerd","Mathematician","Computer Scientist"],
-        typeSpeed: 200,
-        loop: true,
-        cursorChar: "|",
-      });
-  });
-</script>
-
-<script>
-  $(function(){
+    $(function(){
       $(".contact").typed({
         strings: ["Email: rvogt2@ncsu.edu | Office: TBA | Office Hours: TBA"],
         typeSpeed: 0,
         loop: false,
         cursorChar: "|",
       });
-  });
-</script>
-<script type="text/javascript" src="soc.js-master/soc.min.js"></script>
-</head>
+    });
+  </script>
+  <script type="text/javascript" src="soc.js-master/soc.min.js"></script>
 
+</head>
+<body>
 
 <div id="title" class="slide header">
-  
-
-
 
 
 <div class="container">                                        
@@ -296,14 +231,8 @@ position: absolute;
       <li><a href="#">Spectral Methods Notes</a></li>
       <li><a href="notes/finiteelement.pdf">Finite Element Notes</a></li>
        <li><a href="#">Numerical Analysis Notes</a></li>
-       <li><a href="#">Partial Differential Equation and Perturbation Methods Homework.</a></li>
-
-
-
-
-
+       <li><a href="#">Partial Differential Equation and Perturbation Methods Homework</a></li>
     </ul>
-
   </div>
 
 
@@ -322,12 +251,7 @@ position: absolute;
       <li><a href="#">Spectral Methods Notes</a></li>
       <li><a href="">Finite Element Notes</a></li>
        <li><a href="#">Numerical Analysis Notes</a></li>
-       <li><a href="#">Partial Differential Equation and Perturbation Methods Homework.</a></li>
-
-
-
-
-
+       <li><a href="#">Partial Differential Equation and Perturbation Methods Homework</a></li>
     </ul>
 
   </div>
@@ -339,43 +263,26 @@ position: absolute;
     <ul class="dropdown-menu">
       <li><a href="papers/paper1.pdf">Nonautonomous Discrete Neuron Model with Multiple
 Periodic and Eventually Periodic Solutions</a></li>
-    
-
-
-
-
-
     </ul>
-
   </div>
 
-
-
-
-
-
-
-
-
-<div class="pic"> 
-
-  <img src='images/me.jpg'>
-
-  </div>
+<div class="pic"><img alt="Ryan's head" class='round' src='images/me.jpg'></div>
  
 
- <div class = "padding"></div>
+ <div class="padding"></div>
 
-  <h1>
+  
     <div class='typing_container'>
-      <div class = "typearea"></div>
+      <div class='typing_area'>
+        <h1 class="typearea"></h1>
+      </div>
     </div>
-  </h1>
-  <h1>
+
+ 
     <div class='typing_container'>
-      <div class = "contact"></div>
+      <div class='typing_area'> <h1 class="contact"></h1></div>
     </div>
-  </h1>
+  
 
 
   <div id="soc" class="soc" data-size="50px" data-radius="circle">
@@ -386,48 +293,16 @@ Periodic and Eventually Periodic Solutions</a></li>
     <a href="https://www.reddit.com/user/Vogtster/" class="soc-reddit" target="_blank" title="Reddit"></a>
 </div>
 
-
-
-  
-  
-
-
-  <div class = "gif">
-
-  </div>
- 
-
- 
-
-
-
-
-
-
+  <div class = "gif"></div>
 
 </div>
 
-
-
-
 </div>
-
-
-
-
-
-
-
-
-
-  
 
 <div id="slide1" class="slide">
   <div class="title">
     <h1>Bio</h1>
     <p>Hi my name is Ryan! I am a PhD student at NCSU. I have an interest in biking, and running. I have degrees in Mathematics, Computer Science, and Engineering. My research interests are numerical analysis and partial differential equations. I am interested in both applied and theoretical mathematics. My favorite numerical methods are finite difference, spectral methods, finite element, and finite volume. I always like meeting new people; especially those who like math. If I am your TA, please feel free to always contact me. I am here to help.  </p>
-
-
   </div>
 </div>
 
@@ -441,11 +316,11 @@ Periodic and Eventually Periodic Solutions</a></li>
     I'm also very interested in computer science. I like writing bots. See my twitter account, it is fully automated. I mean, I actually update my twitter close to 500 times a day. I have no life (Sarcasm). I think the concept of getting things done in parallel is a very neat idea. So, I like running a lot of scripts while I do math. Life is all about optimizing time.</p>
 
 
-    <div class = "giftwo"> </div>
+    <div class = "giftwo"> <img alt="some math" class='gifimgtwo' src="images/math2.gif"></div>
 
   </div>
-  <img class='postcard' src="movies/heat3d.gif">
-  <img class='postcard' src="movies/heat2d.gif"> 
+  <img alt="more math" class='postcard' src="movies/heat3d.gif">
+  <img alt="yet more math" class='postcard' src="movies/heat2d.gif"> 
 </div>
 
 <div id="slide3" class="slide">
@@ -457,9 +332,8 @@ Periodic and Eventually Periodic Solutions</a></li>
      <h1>Ryan, I'm shy and its difficult for me to approach you because I don't want to look like an idiot</h1>
     <p>I understand it is daunting, this is a new course for you and you want to make a good impression. A good step is to ask questions and come to my office hours regularly if you are confused by problem sets or content presented in the course. If you want to discuss other things, please feel free to stop by, I am always willing to talk. Please do not feel like you are alone on this adventure. Please do not feel embarrassed or bad that you are seeking help. Asking for help is a sign of strength, not weakness. I'm here to help. I have allocated time for office hours. I want people to come and talk to me about math. If people don't come to my office hours, then I will be forced to watch cat videos for that time. Please help me avoid this troublesome situation.</p>
 
-    
-    <p>
     <h1>So Ryan, why did you willingly choose to be a nerd for your entire life? Don't you want to have friends or a social life?</h1>
+    <p>
     Well adventuer, that is an oddly specific question; life as a nerd if pretty awesome.
 
     </p>
@@ -502,11 +376,11 @@ Periodic and Eventually Periodic Solutions</a></li>
 <div id="slide4" class="slide header">
     <h1>Some Tunes for Mathematicians</h1>
 
-    <iframe class="mus" src="https://embed.spotify.com/?uri=spotify:user:mathboss:playlist:3To0NLisooRDQRrlaZscKh" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
+    <iframe class="mus" src="https://embed.spotify.com/?uri=spotify:user:mathboss:playlist:3To0NLisooRDQRrlaZscKh" width="300" height="380"></iframe>
 
    
 </div>
-
+</body>
 
 
 </html>

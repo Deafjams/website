@@ -27,6 +27,7 @@ p {
 }
 
 .slide {
+
   position: relative;
   padding: 25vh 10%;
   min-height: 100vh;
@@ -105,6 +106,12 @@ p {
 #slide2 {
   background-image: url("http://lorempixel.com/output/abstract-q-c-640-480-3.jpg");
   background-attachment: fixed;
+}
+
+#slide3 {
+
+  overflow: hidden;
+
 }
 
 #slide3:before {
